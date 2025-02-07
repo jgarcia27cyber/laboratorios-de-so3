@@ -1,0 +1,20 @@
+crontab -e
+
+:r! cat  /etc/crontab
+
+
+0 23* * * dnf update -y && dnf upgrade
+0 3 * * * reboot
+wq
+
+crontab -l
+
+
+at now + 1 minute
+rm -rf /tmp/*
+ctrl d
+
+atq
+
+cd tmp 
+ls
