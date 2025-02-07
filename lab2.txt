@@ -1,0 +1,33 @@
+actualizar repositorio
+-dnf update
+-dnf upgrade 
+enumerar los repositorios
+-dnf repolist
+-dnf repolist all
+proceda a buscar la herramienta bashtop
+-dnf search bashtop
+instalar las herramientas 
+
+-sudo yum install epel-release
+
+-yum install snapd
+
+para iniciar la herramienta
+
+-systemctl start snapd
+
+-systemctl status snapd
+
+ahora instalamosbashtop
+ -snap install bashtop
+
+ahora iniciamos la herramienta 
+-snap run bashtop
+
+eliminarla
+-snap remove bashtop
+-dnf remove snapd
+
+ eliminar las dependencias
+-dnf autoremove bashtop
+-dnf autoremove snapd
